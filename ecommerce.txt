@@ -1,0 +1,22 @@
+ npx create-vite@latest
+ cd ecommerce
+ npm run dev
+
+Git - 
+git init
+git branch -m master main
+git status
+SSH: git@github.com:Ledertasche/ecommerce.git
+git remote add origin git@github.com:Ledertasche/ecommerce.git
+git push -u origin main
+
+
+
+
+
+
+
+um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
+ecommerce-Projekt
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  05:05:00
+React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
