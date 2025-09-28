@@ -14,15 +14,25 @@ git commit -m "Initial commit"
 git push -u origin main 
 
 Projekt ecommerce
-neuer Ordner
+neuer Ordner src/pages
+im Ordner pages befinden sich in HomePage.jsx der header und die homepage
 ecommerce/src/pages/HomePage.jsx
+                    HomePage.css
+                    header.css
 da HomePage.jsx viele div´s muss <> </> in return
 
 ESlint
 npm install eslint-plugin-react --save-dev
 npx eslint src/App.jsx - keine Meldung kommt zurück, alles ist ok.
 files: ['src/**/*.{js,jsx}'] das src/ muss in eslint.config.js ergänzt werden.
+--------------------------------------------------------------------------
+Video: 05:32:00
+npm install react-router@7.5.1
+für den router wird die ecommerce/src/main.jsx erweiter um BrowserRouter,
+und die ecommerce/src/App.jsx um die Routes und Route.
 
+statt <Route path="/" element={<HomePage />} ></Route>
+      <Route index element={<HomePage />} />
 
 
 
