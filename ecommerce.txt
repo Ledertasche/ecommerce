@@ -8,9 +8,20 @@ git branch -m master main
 git status
 SSH: git@github.com:Ledertasche/ecommerce.git
 git remote add origin git@github.com:Ledertasche/ecommerce.git
-git push -u origin main
+Dateien zum Staging hinzufügen:
+git add .
+git commit -m "Initial commit"
+git push -u origin main 
 
+Projekt ecommerce
+neuer Ordner
+ecommerce/src/pages/HomePage.jsx
+da HomePage.jsx viele div´s muss <> </> in return
 
+ESlint
+npm install eslint-plugin-react --save-dev
+npx eslint src/App.jsx - keine Meldung kommt zurück, alles ist ok.
+files: ['src/**/*.{js,jsx}'] das src/ muss in eslint.config.js ergänzt werden.
 
 
 
@@ -18,5 +29,5 @@ git push -u origin main
 
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  05:05:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  05:22:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
