@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import { products } from '../../ecommerce-backend/data/products'
+import { products } from '../../backend/data/products'
 import './HomePage.css';
 
 function HomePage() {
