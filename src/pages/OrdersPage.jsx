@@ -35,7 +35,7 @@ function OrdersPage() {
 
           <div className="order-details-grid">
             <div className="product-image-container">
-              <img src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+              <img src="images/products/redsox.png" />
             </div>
 
             <div className="product-details">

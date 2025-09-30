@@ -46,9 +46,12 @@ Single Page
 Erweiterung von Header.jsx um import { Link } from 'react-router';
 Änderung der Zeile <a href="/" className="header-link"> nach <Link to="/" className="header-link">
 Erkennbar das es beim Seitenwechsel etwas schneller geht und nicht mehr zuckt.
-
-
-
+----------------------------------------------------------------------------
+Video: 06:10:00
+Backend, Data Fetching, Async Await
+die Änderungen in HomePage.jsx
+import { products } from '../../ecommerce-backend/data/products'
+und erkennbar an den gelben {product. ... }
 
 
 rfce, rafce
