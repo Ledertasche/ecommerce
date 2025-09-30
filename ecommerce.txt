@@ -34,10 +34,20 @@ und die ecommerce/src/App.jsx um die Routes und Route.
 statt <Route path="/" element={<HomePage />} ></Route>
       <Route index element={<HomePage />} />
 
-in der /orders und tracking.html muss index.html durch / ersetzt werden
+in der orders.html und tracking.html muss index.html durch /  ersetzt werden
                                       checkout.html durch /checkout
                                       orders.html durch /orders
                                       tracking.html durch /tracking
+---------------------------------------------------------------------------
+Video: 06:06:00
+damit das Programm nicht zwischen den Wechseln von einer HTML-Seite zur anderen von
+HomePage.jsx zu OrdersPage die Seite neu laden muss: 
+Single Page
+Erweiterung von Header.jsx um import { Link } from 'react-router';
+Änderung der Zeile <a href="/" className="header-link"> nach <Link to="/" className="header-link">
+Erkennbar das es beim Seitenwechsel etwas schneller geht und nicht mehr zuckt.
+
+
 
 
 
