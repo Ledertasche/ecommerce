@@ -28,16 +28,21 @@ files: ['src/**/*.{js,jsx}'] das src/ muss in eslint.config.js ergänzt werden.
 --------------------------------------------------------------------------
 Video: 05:32:00
 npm install react-router@7.5.1
-für den router wird die ecommerce/src/main.jsx erweiter um BrowserRouter,
+für den router wird die ecommerce/src/main.jsx erweitert um BrowserRouter,
 und die ecommerce/src/App.jsx um die Routes und Route.
 
 statt <Route path="/" element={<HomePage />} ></Route>
       <Route index element={<HomePage />} />
 
+in der /orders und tracking.html muss index.html durch / ersetzt werden
+                                      checkout.html durch /checkout
+                                      orders.html durch /orders
+                                      tracking.html durch /tracking
 
 
 
+rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  05:22:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  06:00:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple

@@ -5,9 +5,9 @@ function CheckoutPage() {
         <>
         <title>Checkout</title>
       <div className="checkout-header">
-      <div className="header-content">
+      <div className="header-content"> 
         <div className="checkout-header-left-section">
-          <a href="index.html">
+          <a href="/">
             <img className="logo" src="images/logo.png" />
             <img className="mobile-logo" src="images/mobile-logo.png" />
           </a>
@@ -15,7 +15,7 @@ function CheckoutPage() {
 
         <div className="checkout-header-middle-section">
           Checkout (<a className="return-to-home-link"
-            href="index.html">3 items</a>)
+            href="/">3 items</a>)
         </div>
 
         <div className="checkout-header-right-section">
@@ -36,11 +36,11 @@ function CheckoutPage() {
 
             <div className="cart-item-details-grid">
               <img className="product-image"
-                src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                src="images/products/redsox.png" />
 
               <div className="cart-item-details">
                 <div className="product-name">
-                  Black and Gray Athletic Cotton Socks - 6 Pairs
+                  Red&Red Athletic CDU Socks - 3.5 Pairs
                 </div>
                 <div className="product-price">
                   $10.90
