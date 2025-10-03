@@ -7,14 +7,15 @@ export default defineConfig({
   server: {
     host: true, // oder '0.0.0.0'
     port: 5173,  // optional, falls du einen anderen Port willst
-  },
-  server: {
+  
     proxy: {
       '/api' : {
-        target: 'http://localhost:3000'
+        target: 'http://192.168.2.34:3000',
+        changeOrigin: true
       },
       '/images' : {
-        target: 'http://localhost:3000'
+        target: 'http://192.168.2.34:3000',
+        changeOrigin: true
       }
     }
   }

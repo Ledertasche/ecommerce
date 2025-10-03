@@ -72,6 +72,14 @@ da 'http://localhost:3000' aus HomePage.jsx herausgenommen wurde Ergänzung in
 vite.config.js und in index.html <base href="/" />
 die Bilder kommen jetzt aus ecommerce-backend/images/products
 
+damit alles auch auf dem Smartphone läuft Änderung in vite.config.js
+und in ecommerce-backend/server.js
+ 
+const PORT = process.env.PORT || 3000;
+const HOST = '0.0.0.0';
+console.log(`Server is running on port ${PORT}:${HOST}`);
+--------------------------------------------------------------------------------------------
+
 
 
 rfce, rafce
