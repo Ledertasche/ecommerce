@@ -1,25 +1,32 @@
 import axios from 'axios';
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../components/Header';
- import { products } from '../../backend/data/products'
+// import { products } from '../../backend/data/products'
 import './HomePage.css';
 
 function HomePage() {
-    // const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
 
-    // useEffect(() => {
-    // axios.get('http://localhost:3000/api/products')
-    //     .then((response) => {
-    //      console.log(response.data)
-    //      setProducts(response.data)
-    //     })
-    // }, []) // die [] ist das Dependency Array
+    useEffect(() => {
+    axios.get('/api/products')
+        .then((response) => {
+         console.log(response.data)
+         setProducts(response.data)
+        });
+    
+    axios.get('/api/cart-items')
+        .then((response) => {
+            console.log(response.data);
+            setCart(response.data);
+        })
+    }, []) // die [] ist das Dependency Array
 
     //   3. Möglichkeit
-    axios.get('http://localhost:3000/api/products')
-       .then((response) => {
-        console.log(response.data)
-       })
+    // axios.get('http://localhost:3000/api/products')
+    //    .then((response) => {
+    //     console.log(response.data)
+    //    });
 
     // fetch('http://localhost:3000/api/products')
     //    1. Möglichkeit
@@ -37,10 +44,12 @@ function HomePage() {
     //    }).then((data) => {
     //          console.log(data);
     //     });
+
+    
     return (
     <>
     <title>Ecommerce</title>
-    <Header />
+    <Header cart={cart}/>
         <div className="home-page">
         <div className="products-grid">
 

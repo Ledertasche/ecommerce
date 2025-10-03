@@ -29,6 +29,7 @@ export default defineConfig([
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
       "react/no-unknown-property": "error",
+      "react/prop-types": "off",
     },
     settings: {
       react: {

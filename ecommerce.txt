@@ -52,6 +52,26 @@ Backend, Data Fetching, Async Await
 die Änderungen in HomePage.jsx
 import { products } from '../../ecommerce-backend/data/products'
 und erkennbar an den gelben {product. ... }
+-----------------------------------------------------------------------------
+fetch('http://localhost:3000/api/products') - in ecommerce/src/pages/HomePage.jsx - Video: 06:25:00
+Promise
+fetch().then(response)
+wenn die Daten geholt wurden, dann ...
+in response befinden sich die Daten aus products.js
+npm install axios - in ecommerce
+die Funktion axios.get() in einen useEffect verpacken damit man kontrollieren kann 
+wann die Funktion ausgeführt wird.
+Damit man die Daten jetzt im Programm verwenden kann braucht man - useState
+(die Daten kommen nicht aus ecommerce-backend/src/backend/products.json und aus images, sonder aus SQLite)
+-----------------------------------------------------------------------------------------
+axios.get('http://localhost:3000/api/cart-items') - in ecommerce/src/pages/HomePage.jsx - Video: 06:40:00
+diese Daten kommen ursprünglich aus ecommerce-backend/src/backend/cart.json
+da Cart im Header liegt ecommerce/src/pages/HomePage.jsx - <Header cart={cart}/>
+Ergänzungen für cart in ecommerce/src/components/Header.jsx
+da 'http://localhost:3000' aus HomePage.jsx herausgenommen wurde Ergänzung in
+vite.config.js und in index.html <base href="/" />
+die Bilder kommen jetzt aus ecommerce-backend/images/products
+
 
 
 rfce, rafce
