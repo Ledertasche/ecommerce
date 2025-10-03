@@ -1,25 +1,25 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import Header from '../components/Header';
-// import { products } from '../../backend/data/products'
+ import { products } from '../../backend/data/products'
 import './HomePage.css';
 
 function HomePage() {
-    const [products, setProducts] = useState([])
+    // const [products, setProducts] = useState([])
 
-    useEffect(() => {
-    axios.get('http://localhost:3000/api/products')
-        .then((response) => {
-         console.log(response.data)
-         setProducts(response.data)
-        })
-    }, []) // die [] ist das Dependency Array
-
-    //    3. Möglichkeit
+    // useEffect(() => {
     // axios.get('http://localhost:3000/api/products')
-    //    .then((response) => {
-    //     console.log(response.data)
-    //    })
+    //     .then((response) => {
+    //      console.log(response.data)
+    //      setProducts(response.data)
+    //     })
+    // }, []) // die [] ist das Dependency Array
+
+    //   3. Möglichkeit
+    axios.get('http://localhost:3000/api/products')
+       .then((response) => {
+        console.log(response.data)
+       })
 
     // fetch('http://localhost:3000/api/products')
     //    1. Möglichkeit
