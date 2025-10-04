@@ -79,11 +79,20 @@ const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 console.log(`Server is running on port ${PORT}:${HOST}`);
 --------------------------------------------------------------------------------------------
+lift-up - Video: 06:50:00
+da cart in HomePage.jsx und CheckoutPage.jsx gebraucht wird, wird es in die App.jsx gehoben.
+Dort können es beide Komponenten verwenden.
+Durch die Erweiterung von '/api/cart-items' auf '/api/cart-items?expand=product' bekommen wir die 
+Produktinformationen die wir für CheckoutPage.jsx brauchen.
 
+da wir diese Funktion ${(product.priceCents / 100).toFixed(2)} mehrfach brauchen, wird eine neue 
+Komponente angelegt: ecommerce/src/utils/money.js und durch {formatMoney(product.priceCent)} ersetzt.
 
 
 rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  06:00:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  06:50:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
+
+Dankbar rückwärts, mutig vorwärts, gläubig aufwärts
