@@ -15,13 +15,15 @@ function HomePage({ cart }) {
          console.log(response.data)
          setProducts(response.data)
         });
+    }, []) // die [] ist das Dependency Array
+
     
     // axios.get('/api/cart-items')
     //     .then((response) => {
     //         console.log(response.data);
     //         setCart(response.data);
     //     })
-    }, []) // die [] ist das Dependency Array
+    // }, []) // die [] ist das Dependency Array
 
     //   3. Möglichkeit
     // axios.get('http://localhost:3000/api/products')

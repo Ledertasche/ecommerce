@@ -87,6 +87,14 @@ Produktinformationen die wir für CheckoutPage.jsx brauchen.
 
 da wir diese Funktion ${(product.priceCents / 100).toFixed(2)} mehrfach brauchen, wird eine neue 
 Komponente angelegt: ecommerce/src/utils/money.js und durch {formatMoney(product.priceCent)} ersetzt.
+--------------------------------------------------------------------------------------------
+deliveryOptions in ecommerce/src/pages/HomePage.jsx - Video: 07:05:00
+npm install dayjs
+Erweiterung der ecommerce/src/pages/CheckoutPage.jsx um
+ - {dayjs(deliveryOption.estimateDeliveryTimeMs).format('dddd, MMMM D')}
+ - let priceString = 'FREE Shipping';
+
+
 
 
 rfce, rafce
