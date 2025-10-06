@@ -100,7 +100,7 @@ Erweiterung der ecommerce/src/pages/CheckoutPage.jsx um
 rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  06:50:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  07:20:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
 
 Dankbar rückwärts, mutig vorwärts, gläubig aufwärts
