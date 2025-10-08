@@ -6,15 +6,23 @@ import './HomePage.css';
 
 function HomePage({ cart }) {
     const [products, setProducts] = useState([]);
-    // const [cart, setCart] = useState([]);
+    // const [cart, setCart] = useState([]); 
 
     useEffect(() => {
-    axios.get('/api/products')
-        .then((response) => {
-         console.log(response.data)
-         setProducts(response.data)
-        });
-    }, []) // die [] ist das Dependency Array
+        const getHomeData = async () => {
+          const response = await axios.get('/api/products');
+          setProducts(response.data);
+    };
+        getHomeData();
+    }, []);
+    // 5. Möglichkeit
+    // useEffect(() => {
+    // axios.get('/api/products')
+    //     .then((response) => {
+    //      console.log(response.data)
+    //      setProducts(response.data)
+    //     });
+    // }, []);
 
     //   4. Möglichkeit mit Auslagerung von http://localhost:3000 vite.config.js
     // axios.get('/api/cart-items')
