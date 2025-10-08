@@ -1,60 +1,8 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import Header from '../components/Header';
-// import { products } from '../../backend/data/products'
-import  formatMoney from '../utils/money'
-import './HomePage.css';
+import formatMoney from '../../utils/money'
 
-function HomePage({ cart }) {
-    const [products, setProducts] = useState([]);
-    // const [cart, setCart] = useState([]);
-
-    useEffect(() => {
-    axios.get('/api/products')
-        .then((response) => {
-         console.log(response.data)
-         setProducts(response.data)
-        });
-    }, []) // die [] ist das Dependency Array
-
-    
-    // axios.get('/api/cart-items')
-    //     .then((response) => {
-    //         console.log(response.data);
-    //         setCart(response.data);
-    //     })
-    // }, []) // die [] ist das Dependency Array
-
-    //   3. Möglichkeit
-    // axios.get('http://localhost:3000/api/products')
-    //    .then((response) => {
-    //     console.log(response.data)
-    //    });
-
-    // fetch('http://localhost:3000/api/products')
-    //    1. Möglichkeit
-    //    .then((response) => {
-    //     response.json().then((data) => {
-    //          console.log(data);
-    //     })
-    //    })
-
-    // fetch('http://localhost:3000/api/products')
-    //    2. Möglichkeit
-    // .then((response) => {
-    //     console.log(response);
-    //     return response.json()
-    //    }).then((data) => {
-    //          console.log(data);
-    //     });
-
-    
-    return (
-    <>
-    <title>Ecommerce</title>
-    <Header cart={cart}/>
-        <div className="home-page">
-        <div className="products-grid">
+function ProductsGrid({ products }) {
+  return (
+     <div className="products-grid">
 
             {products.map((product) => {
                 return (
@@ -106,9 +54,10 @@ function HomePage({ cart }) {
                 Add to Cart
             </button>
             </div>
-                )
-            })}
-            <div className="product-container">
+                );
+            })};
+
+            {/* <div className="product-container">
             <div className="product-image-container">
                 <img className="product-image"
                 src="images/products/redsox.png" />
@@ -253,10 +202,9 @@ function HomePage({ cart }) {
             <button className="add-to-cart-button button-primary">
                 Add to Cart
             </button>
-            </div>
+            </div> */}
         </div>
-        </div>
-    </>
-    );
+  )
 }
-export default HomePage
+
+export default ProductsGrid

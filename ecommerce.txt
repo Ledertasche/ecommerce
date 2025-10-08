@@ -93,6 +93,20 @@ npm install dayjs
 Erweiterung der ecommerce/src/pages/CheckoutPage.jsx um
  - {dayjs(deliveryOption.estimateDeliveryTimeMs).format('dddd, MMMM D')}
  - let priceString = 'FREE Shipping';
+--------------------------------------------------------------------------------------------
+Auslagerung in kleinere Komponenten - Video: 07:38:00 
+von ecommerce/src/pages/home/HomePage,jsx nach ProductsGrid.jsx,  
+ <div className="products-grid"> wird seperated in ProductsGrid.jsx
+
+von ecommerce/src/pages/checkout/CheckoutPage.jsx nach OrderSummary.jsx
+ <div className="order-summary">
+
+von ecommerce/src/pages/checkout/CheckoutPage.jsx nach PaymentSummary.jsx
+ <div className="payment-summary">
+
+von ecommerce/src/pages/checkout/OrderSummary.jsx nach DeliveryOptions.jsx
+ <div className="delivery-options">
+
 
 
 
@@ -100,7 +114,7 @@ Erweiterung der ecommerce/src/pages/CheckoutPage.jsx um
 rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  07:20:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  07:37:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
 
 Dankbar rückwärts, mutig vorwärts, gläubig aufwärts
