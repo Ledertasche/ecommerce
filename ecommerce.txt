@@ -111,15 +111,39 @@ async-await - Video: 07:53:00
 HomePage.jsx, App.jsx, CheckoutPage.jsx
 Wenn async-await innerhalb useEffect verwendet wird muss eine neue Funktion erstellt werden
 und diese Funktion am Ende ausgeführt werden.
+---------------------------------------------------------------------------------------------
+Data Mutation, Types of Requests - Video: 08:00:00
+Data Mutation = update data in the backend
+ecommerce/src/pages/home/ProductsGrid.jsx,
+            onClick={() => {
+                axios.post('/api/cart-items', {
+                    productId: product.id,
+                    quantity: 1
+                });
+               }}
+nach einfügen dieses onclick kann auf der HomePage mit dem Button "Add to Cart" bestellt werden.Nach einem 
+refresh erhöht sich die Zahl im Einkaufswagen und auf der CheckoutPage wurde das Produkt hinzu addiert.  
+
+damit nicht immer refresh gedrückt werden muss sondern die Seite bei jeder Bestellung 
+automatisch neu geladen wird: loadCart in App.jsx, HomePage.jsx, ProductsGrid
+--------------------------------------------------------------------------------------
+Controlled Input - Video: 08:10:30
+Option Box aktivieren - save the quantity, mit useState
+    const [quantity, setQuantity] = useState(1);
+wenn useState wie üblich direkt unter function ProductsGrid({ products, loadCart }) eingefügt wird,
+werden alle Options aller Carts auf den selben Wert gestellt. Deshalb müsste useState nach
+{products.map((product) => eingefügt werden )} , aber
+jedes Produkt darf nur einen useState haben deshalb neue Datei Product.jsx
+--------------------------------------------------------------------------------------
 
 
-
-
-
+Allgemeines:
+Number(event.target.value) wandelt den String "3" in die Zahl 3 um.
 rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  07:37:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  08:17:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
+cd ecommerce-backend
 
 Dankbar rückwärts, mutig vorwärts, gläubig aufwärts
