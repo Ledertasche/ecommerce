@@ -148,7 +148,13 @@ Wenn sich jetzt der Shipping-Preis ändert, ändert sich Payment Summary.
 --------------------------------------------------------------------------------------
 delete Funktion in OrderSummary.jsx - Video: 08:38:00
 axios.delete(`/api/cart-items/${cartItem.productId}`)
-
+--------------------------------------------------------------------------------------
+create Order Funktion in PaymentSummary.jsx - Video. 08:42:00
+await axios.post('/api/orders');
+useNavigate
+ - auf HomePage.jsx(SuperSimpleDev) werden alle products geladen: const response = await axios.get('/api/products');
+ - mit "Add to Cart"(Product.jsx) erscheinen sie auf der CheckoutPage.jsx(cart)
+ - mit "Place your order" wird die Bestellung abgeschickt, alles wird auf null gesetzt.
 
 
 
