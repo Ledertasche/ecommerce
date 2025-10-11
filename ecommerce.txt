@@ -135,6 +135,16 @@ werden alle Options aller Carts auf den selben Wert gestellt. Deshalb müsste us
 {products.map((product) => eingefügt werden )} , aber
 jedes Produkt darf nur einen useState haben deshalb neue Datei Product.jsx
 --------------------------------------------------------------------------------------
+Choose a delivery option in DeliveryOptions.jsx - Video 08:27:00
+(die )
+await axios.put(`/api/cart-items/${cartItem.productId}`)
+Ergänzung: onChange={() => {}} verhindert diesen Fehler
+DeliveryOptions.jsx?t=1760125047456:29 You provided a `checked` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultChecked`. Otherwise, set either `onChange` or `readOnly`
+--------------------------------------------------------------------------------------
+reload the Payment Summary in PaymentSummary.jsx - Video 08:35:00
+in CheckoutPage.jsx den useEffect um }, [cart]); ergänzen. Jedesmal wenn cart sich ändert,
+wenn Add To Cart-Button gedrückt wird useEffect wird updated.
+Wenn sich jetzt der Shipping-Preis ändert, ändert sich Payment Summary.
 
 
 Allgemeines:
@@ -142,7 +152,7 @@ Number(event.target.value) wandelt den String "3" in die Zahl 3 um.
 rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  08:17:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  08:35:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
 cd ecommerce-backend
 
