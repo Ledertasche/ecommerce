@@ -163,7 +163,7 @@ Number(event.target.value) wandelt den String "3" in die Zahl 3 um.
 rfce, rafce
 um die App am Smartphone zu verwenden die vite.config.js um den server erweitern.
 ecommerce-Projekt
-Video: https://www.youtube.com/watch?v=TtPXvEcE11E  08:35:00
+Video: https://www.youtube.com/watch?v=TtPXvEcE11E  08:50:00
 React Full Course - Beginner to Pro (React 19, 2025)  SuperSimple
 cd ecommerce-backend
 
